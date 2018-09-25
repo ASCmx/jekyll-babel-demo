@@ -1,4 +1,4 @@
-# Jekyll Babel Demo
+# Jekyll Vue Demo
 
 Instrucciones para macOS:
 1. Instalar Jekyll con `gem install bundler jekyll`.
@@ -8,7 +8,7 @@ Instrucciones para macOS:
 # iniciar server de desarrollo de Jekyll
 jekyll serve
 # build
-jekyll serve
+jekyll build
 # deploy
 ./deploy.sh
 ```
