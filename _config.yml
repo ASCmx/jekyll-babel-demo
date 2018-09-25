@@ -1,0 +1,13 @@
+url: https://jekyll-demo-ac0c9.firebaseapp.com
+destination: ./_deploy/public
+sass:
+    sass_dir: _scss
+    style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - node_modules
+  - webpack.config.js

@@ -1,0 +1,20 @@
+---
+permalink: /
+slug: home
+---
+
+{% include header.html %}
+
+<div id="posts-vue">
+	<h1>Posts</h1>
+	<ul>
+		<li v-for="post in posts">
+			{post.title}
+		</li>
+	</ul>
+
+</div>
+
+<script src="js/home.js"></script>
+
+{% include footer.html %}
