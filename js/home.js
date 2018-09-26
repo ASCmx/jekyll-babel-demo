@@ -1,7 +1,5 @@
-const URL = 'https://jsonplaceholder.typicode.com/posts';
-
 const component = new Vue({
-	delimiters: ['{', '}'],
+	delimiters: ['@', '@'],
 	el: '#posts-vue',
 	data: {
 		posts: []
@@ -13,4 +11,6 @@ async function testURL () {
 	component.posts = result.data;
 }
 
-testURL();
+setTimeout(() => {
+	testURL();
+}, 2000);

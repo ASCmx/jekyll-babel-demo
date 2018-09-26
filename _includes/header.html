@@ -7,3 +7,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
+
+{% if page.requires_auth %}
+	<div id="spinner"></div>
+	<script src="/js/checkAuth.js"></script>
+{% endif %}

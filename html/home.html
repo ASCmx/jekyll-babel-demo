@@ -1,4 +1,6 @@
 ---
+requires_auth: false
+js_file: home.js
 permalink: /
 slug: home
 ---
@@ -8,13 +10,12 @@ slug: home
 <div id="posts-vue">
 	<h1>Posts</h1>
 	<ul>
-		<li v-for="post in posts">
-			{post.title}
-		</li>
+		<table border="1" v-if="posts.length > 0">
+			<tr v-for="post in posts">
+				<td>@post.title@</td>
+			</tr>
+		</table>
 	</ul>
-
 </div>
-
-<script src="js/home.js"></script>
 
 {% include footer.html %}
